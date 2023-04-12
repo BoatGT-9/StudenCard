@@ -36,7 +36,7 @@
             }
         }
 
-        public function detailphone($id){
+        public function detail($id){
             $sql = "SELECT * FROM `s1` WHERE `id` = :id";
             $query = $this->condb->prepare($sql);
             $query->bindParam(':id',$id,PDO::PARAM_INT);

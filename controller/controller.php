@@ -17,9 +17,9 @@
             include './views/showe.php';
 
         }
-        public function detailphone($id){    
-            $result = $this->model->detailphone($id);
-            include './views/detailphone.php';
+        public function detail($id){    
+            $result = $this->model->detail($id);
+            include './views/detail.php';
 
         }
         public function mvcPhone(){
@@ -27,7 +27,7 @@
             switch($Route){
                 case "detail":
                     $id = $_REQUEST['id'];
-                    $this->detailphone($id);
+                    $this->detail($id);
                 break; 
                 default:
                     $this->showe();
