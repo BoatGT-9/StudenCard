@@ -24,7 +24,7 @@
             }
         }
 
-        public function phone(){
+        public function showe(){
             $sql = "SELECT * FROM `s1`";
             $query = $this->condb->prepare($sql);
             if($query->execute()){

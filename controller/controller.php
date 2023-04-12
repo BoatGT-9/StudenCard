@@ -12,9 +12,9 @@
             $this->condb = new condb();
             $this->model = new model($this->condb);
         }
-        public function phone(){
-            $result = $this->model->phone();
-            include './views/phone.php';
+        public function showe(){
+            $result = $this->model->showe();
+            include './views/showe.php';
 
         }
         public function detailphone($id){    
@@ -30,7 +30,7 @@
                     $this->detailphone($id);
                 break; 
                 default:
-                    $this->phone();
+                    $this->showe();
                 break;
             }
     }
